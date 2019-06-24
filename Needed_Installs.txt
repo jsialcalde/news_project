@@ -1,0 +1,3 @@
+pip install vaderSentiment
+
+pip install newsapi-python
