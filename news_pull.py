@@ -107,6 +107,9 @@ def news_pull(q):
             row['sentiment'] = 'neutral'
         row['sentiment_score'] = sentiment_score
 
+    newsFrame.datePublished = pd.to_datetime(newsFrame.datePublished)
+    newsFrame.datePublished = newsFrame.datePublished.dt.strftime('%m/%d/%Y') 
+    
     # check dataframe to see if sentiment score was added in
     print(newsFrame.head())
     
