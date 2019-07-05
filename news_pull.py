@@ -42,6 +42,7 @@ def news_pull(q):
     #Get the number of items returned
     totalCount = response_test["totalCount"];
     totalPages = round(totalCount/pageSize)
+    print('Please wait...searching')
     print(f' There are {totalPages} pages, with {totalCount} total articles.')
     
 
